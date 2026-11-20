@@ -17,7 +17,7 @@ end ClkDiv;
 architecture Behavioral of ClkDiv is
 
 -- Compteur pour le Facteur de Division de l'Horloge 100 MHé
-signal CPT_25M: std_logic_vector(1 downto 0);
+signal CPT_25M: std_logic_vector(2 downto 0);
 
 -- Signal Interne de l'Horloge 25 MHz
 signal clk_int: std_logic;
@@ -36,20 +36,20 @@ begin
     -- Reset Asynchrone
     if reset = '0' then 
         
-        CPT_25M <= "00"; Clk_int <= '0';
+        CPT_25M <= "000"; Clk_int <= '0';
     
     -- Sinon Test Front d'Horloge
-	elsif rising_edge(clk100) then
+	elsif not(rising_edge(clk100)) then
 		
 	-- Incrémentation du Compteur de Division
 	CPT_25M <= CPT_25M + 1;
 		      
 	   -- Si la Valeur Limite Est Atteinte
-	   if CPT_25M = "10" then
+	   if CPT_25M = "100" then
 			     
 	       -- RAZ Compteur et Changement Etat Horloge 25 MHz
-	       CPT_25M <= "00";
-	       Clk_int <= not Clk_init;
+	       CPT_25M <= "000";
+	       clk_int <= not clk_int;
 	   end if;
 	end if;
 end process;
