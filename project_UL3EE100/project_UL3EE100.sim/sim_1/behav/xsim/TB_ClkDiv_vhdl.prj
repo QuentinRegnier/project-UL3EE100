@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../3EE100__TP0/3EE100_TP0/3EE100_TP0.srcs/sources_1/imports/Console_Complete/ClkDiv.vhd" \
-"../../../../../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/TESTBENCH/tb_clkdiv.vhd" \
+"../../../../project_UL3EE100.srcs/sources_1/imports/Downloads/3EE100__TP0/3EE100_TP0/3EE100_TP0.srcs/sources_1/imports/Console_Complete/ClkDiv.vhd" \
+"../../../../project_UL3EE100.srcs/sources_1/imports/Downloads/Sources_Debut_TP_2021/Sources_Debut_TP_2021/TESTBENCH/tb_clkdiv.vhd" \
 
 # Do not sort compile order
 nosort

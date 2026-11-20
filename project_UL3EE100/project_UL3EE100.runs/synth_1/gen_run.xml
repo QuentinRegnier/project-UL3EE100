@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1795188150" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_baxys.dcp">
   <File Type="PA-TCL" Name="top_baxys.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_baxys_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_baxys_reports.tcl"/>
   <File Type="RDS-RDS" Name="top_baxys.vds"/>
   <File Type="RDS-UTIL" Name="top_baxys_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_baxys_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top_baxys.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_baxys_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="top_baxys_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ADXL362Ctrl.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/ADXL362Ctrl.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ADXL362Ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ClkAcc.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/ClkAcc.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ClkAcc.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -29,150 +30,198 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/SPI_If.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/SPI_If.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/SPI_If.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/pong_package.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/pong_package.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/pong_package.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/switch_mgr.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/switch_mgr.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/switch_mgr.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/button_mgr.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/button_mgr.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/button_mgr.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/aff_mgr_basys.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/aff_mgr_basys.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/aff_mgr_basys.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/rotary.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/rotary.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/rotary.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ip_rotary.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/ip_rotary.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ip_rotary.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/accelero_mgr.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/accelero_mgr.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/accelero_mgr.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/decor.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/decor.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/decor.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/pad.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/pad.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/pad.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/bounce.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/bounce.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/bounce.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ball.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/ball.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/ball.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/brick.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/brick.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/brick.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/objects.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/objects.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/objects.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/display.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/display.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/display.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/game_mgr.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/game_mgr.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/game_mgr.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/mas_sla_mgr.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/mas_sla_mgr.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/mas_sla_mgr.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/game.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/game.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/game.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/VGA.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/VGA.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/VGA.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/Top_Basys.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/Top_Basys.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/Top_Basys.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/TACHE_1/Top.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/TACHE_1/Top.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/TACHE_1/Top.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/aff_mgr_nexys.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/aff_mgr_nexys.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/aff_mgr_nexys.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/Top_Nexys.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/VHDL/Top_Nexys.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/VHDL/Top_Nexys.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/TESTBENCH/tb_clkdiv.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Sources_Debut_TP_2021/TESTBENCH/tb_clkdiv.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/TESTBENCH/tb_clkdiv.vhd"/>
+        <Attr Name="ImportTime" Val="1795190251"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -185,15 +234,19 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/XDC/Console_Basys.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/XDC/Console_Basys.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/XDC/Console_Basys.xdc"/>
+        <Attr Name="ImportTime" Val="1795182887"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/XDC/Console_Nexys.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/XDC/Console_Nexys.xdc">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources_Debut_TP_2021/Sources_Debut_TP_2021/XDC/Console_Nexys.xdc"/>
+        <Attr Name="ImportTime" Val="1795182887"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
