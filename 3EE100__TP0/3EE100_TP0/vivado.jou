@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jul  3 14:01:27 2026
+# Process ID: 15420
+# Current directory: D:/Enseignement/Temp/3EE100_TP0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14212 D:\Enseignement\Temp\3EE100_TP0\3EE100_TP0.xpr
+# Log file: D:/Enseignement/Temp/3EE100_TP0/vivado.log
+# Journal file: D:/Enseignement/Temp/3EE100_TP0\vivado.jou
+# Running On: plsyel16, OS: Windows, CPU Frequency: 2189 MHz, CPU Physical cores: 14, Host memory: 68333 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Enseignement/Temp/3EE100_TP0/3EE100_TP0.xpr
+update_compile_order -fileset sources_1
+import_files {{D:/Enseignement/L3 - MAE/TP/Console Vivado - 2017/Sources VHDL Console/Console_Complete/ClkDiv.vhd}}
+import_files -fileset sim_1 {{D:/Enseignement/L3 - MAE/TP/Console Vivado - 2017/Sources VHDL Console/Sources_Debut_TP_2021/TESTBENCH/tb_clkdiv.vhd}}
+launch_simulation
+launch_simulation
+source TB_ClkDiv.tcl
+restart
