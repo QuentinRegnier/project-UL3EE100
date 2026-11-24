@@ -40,8 +40,10 @@ port(
 end Moving_colors;
 
 architecture Behavioral of Moving_colors is
+type STATE is (S1,S2,S3);
+signal EP, EF : STATE;
 signal clk_int : std_logic;
-signal CPT_Red, CPT_Green, CPT_Blue : std_logic_vector(4 downto 0);
+signal CPT_Red, CPT_Green, CPT_Blue : unsigned(4 downto 0);
 begin
 
     process(Clk100, Reset)
@@ -67,7 +69,27 @@ begin
 	   end if;
     end process;
     
-    process(clk_int, Reset)
+    -- Registre d'état de la MAE
+    process (Clk100, Reset)
+    begin
+    	if (Reset = '0') then EP <= S1;
+        elsif rising_edge(Clk100) then EP <= EF;
+        end if;
+	end process;
+	
+	-- Combinatoire des états futurs
+    process (EP, CPT_Red, CPT_Green, CPT_Blue)
+    begin
+    	case EP is
+            when S1 => if CPT_Green = "11111" then EF <= S2; else EF <= EP; end if;
+            when S2 => if CPT_Blue = "11111" then EF <= S3; else EF <= EP; end if;
+           	when S3 => if CPT_Red = "11111" then EF <= S1; else EF <= EP; end if;
+           	when others => EF <= EP;
+        end case;
+	end process;
+	
+	-- Compteur 5 bits RGB
+	process(clk_int, Reset)
     begin
         -- Reset Asynchrone
         if Reset = '0' then 
@@ -78,10 +100,23 @@ begin
         
         -- Sinon Front d'Horloge
         elsif rising_edge(clk_int) then
-        
-            
-            
+            case EP is
+                when S1 => CPT_Red <= CPT_Red - 1; CPT_Green <= CPT_Green + 1;
+                when S2 => CPT_Green <= CPT_Green - 1; CPT_Blue <= CPT_Blue + 1;
+                when S3 => CPT_Blue <= CPT_Blue - 1; CPT_Red <= CPT_Red + 1;
+                when others => NULL;
+            end case;
 	   end if;
     end process;
-
+    
+    -- Transmission valeur de sortie
+     process(clk_int)
+     begin
+        if rising_edge(clk_int) then
+            RED_Out <= std_logic_vector(CPT_Red(4 downto 1));
+            GREEN_Out <= std_logic_vector(CPT_Green(4 downto 1));
+            BLUE_Out <= std_logic_vector(CPT_Blue(4 downto 1));
+        end if;
+     end process;
+     
 end Behavioral;
